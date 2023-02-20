@@ -1,0 +1,38 @@
+<p>examplehttp works!</p>
+<table>
+    <tr>
+        <th>email</th>
+        <th>password</th>
+    </tr>
+    <tr *ngFor="let arr of deta">
+        <td>{{arr.email}}</td>
+        <td>{{arr.password}}</td>
+        <td><button (click)="edit(arr)">Edit</button></td>
+        <td><button (click)="delete(arr)">Delete</button></td>
+    </tr>
+</table>
+
+
+<form [formGroup]="form">
+    <label>Email</label><input type="text" placeholder="email" formControlName="email">
+    <label>Password</label><input type="password" placeholder="password" formControlName="password">
+</form>
+<button (click)="post()"  [disabled]="desalber">Submit</button>
+<button (click)="update()" [disabled]="disa">update</button>
+
+
+<h3>
+    {{hello | uppercase|lowercase}} <br>
+
+    {{date | date : 'd/M/y' }} <br>
+    
+    {{decimal | number :'1.10-19'}}
+
+</h3>
+
+
+
+<h4>
+
+    {{ number | reverse }}
+</h4>

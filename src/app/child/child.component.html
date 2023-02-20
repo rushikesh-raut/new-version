@@ -1,0 +1,24 @@
+   <div *ngFor="let local of student; index as i " style="background-color: orange;">
+      <li>{{i+1}}-{{local.name}}</li>
+   </div>
+   <p>child works!</p>
+   
+
+<table class="table table-striped table-hover table-bordered" style="border: 5px solid red;">
+<thead>
+      <tr>
+         <th> sr.no </th>
+         <th>name </th>
+         <th>lastname </th>
+         <th>addrss</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr *ngFor="let add of student ; index as i">
+         <td>{{i+1}}</td>
+         <td>{{add.name}}</td>
+         <td>{{add.lastname}}</td>
+         <td>{{add.address}}</td>
+      </tr>
+   </tbody>
+</table>

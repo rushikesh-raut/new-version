@@ -1,0 +1,32 @@
+<p>vivo works!</p>
+<div *ngIf="hero; else elseblock">
+Today is Holiday
+</div>
+<ng-template #elseblock>
+<div style="font-size:25px ;">
+    today is not Holiday
+</div>
+</ng-template>
+
+
+<!-- <ng-template #thenblock>
+    <div>
+        google
+    </div>
+</ng-template> -->
+
+
+
+<!-- <div [ngSwitch]="vivo"  >
+    <div *ngSwitchCase="1">one is selected </div>
+    <div *ngSwitchCase="2">two is selected </div>
+    <div *ngSwitchCase="3">three is selected </div>
+    <div *ngSwitchDefault="defult">defulte value</div>
+</div>
+<button (click)="h1(1)">one</button>
+<button (click)="h1(2)">two</button>
+<button (click)="h1(3)">three</button>
+
+<input type="text" #box >
+<button (click)="hr(box.value)"> pass</button>
+ -->

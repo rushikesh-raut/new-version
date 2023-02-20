@@ -1,0 +1,20 @@
+<p>mens-section works!</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>sr.no</th>
+            <th>name</th>
+            <th>lname</th>
+            <th>edit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let arr of displya index as i ">
+            <td>{{i+1}}</td>
+            <td>{{arr.name}}</td>
+            <td>{{arr.lname}}</td>
+            <td><button (click)="men(arr)">pass</button></td>
+        </tr>
+    </tbody>
+    
+</table>

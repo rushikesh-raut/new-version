@@ -1,0 +1,24 @@
+<p>assigenment1 works!</p>
+<table class=" table table-warning">
+    <thead>
+        <tr>
+            <th>Sr.NO</th>
+            <th>Animal</th>
+            <th>Prize</th>
+            <th>Cast</th>
+            <th>Milk</th>
+            <th>About</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let buf of details index as a">
+            <td>{{a+1}}</td>
+            <td>{{buf.Animal}}</td>
+            <td>{{buf.prize}}</td>
+            <td>{{buf.cast}}</td>
+            <td>{{buf.milk}}</td>
+            <td><button (click)="show(buf)" class="btn btn-danger">Sendinfo.</button></td>
+        </tr>
+    </tbody>
+</table>
+<router-outlet></router-outlet>

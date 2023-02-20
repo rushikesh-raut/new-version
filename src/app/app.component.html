@@ -1,0 +1,54 @@
+        <!-- <app-hello></app-hello> -->
+     <!-- <div class= 'app-hello'></div>   -->
+    <!-- <app-parent></app-parent>    -->
+         <app-reactiveform></app-reactiveform> 
+    <!-- <app-form></app-form>   -->
+    <!-- <app-zero></app-zero>  -->
+    <!-- <app-parent1></app-parent1>   -->
+    <app-vivo></app-vivo> 
+<h1 onclick="colorchange()">
+    {{local}}
+</h1>
+   
+   <a routerLink="hello/shop">google</a>
+    
+<a routerLink="bro">flipcart</a><br>
+    
+ <a routerLink="ravi">virul</a><br>
+
+
+
+
+ <a [routerLink]="['ravi']"[state]="{id:07,name:'Dhoni.'}">ravi state link</a><br>
+
+
+
+<a [routerLink]="['hello']"  [queryParams]= "{place:'virul',location:'ambadevi',pincode:442302,boolean:'ture'}" >waht is this..</a><br>
+
+
+
+
+
+
+
+
+
+
+<a routerLink="use">use HTTP details</a><br>
+    
+<a routerLink="mens">mens section</a><br>
+
+<a routerLink="assi2/login">assigenment2</a> <br>
+
+<a routerLink="assi">assigenment1</a> <br>
+
+  <a routerLink="modo">lazy loding</a>
+    <!-- <a routerLink="/jay">wipro</a>  -->
+
+    
+<button (click)="route()" class="btn btn-primary">click</button>
+<button (click)="socho()" class="btn btn-primary" style="margin:10px;">click2</button>
+<button class="btn btn-primary" (click)="phone()">iPhone</button>
+
+    <router-outlet></router-outlet>
+    

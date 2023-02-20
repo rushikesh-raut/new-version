@@ -1,0 +1,39 @@
+ <p>reactiveform works!</p>
+ <label>username</label>
+ <input type="text" [formControl]="username">
+ <button (click)="a()">update</button><br><br><br>
+ {{username.value}}
+
+
+
+ <form [formGroup]="profile">
+    <label>firstname</label> <input type="text" formControlName="firstname">
+    <marquee behavior="alternet" direction="left" *ngIf="profile.controls['firstname'].invalid && (profile.controls['firstname'].dirty || profile.controls['firstname'].touched)" class="he">
+    rushi plese.. enter your fname
+    
+</marquee>
+<br>
+    <label>lastname</label> <input type="text" formControlName="lastname"><br>
+    <label>address</label> <input type="text" formControlName="address">
+    
+ </form>
+ <button (click)="hello()">update</button>
+ <button (click)="hello1()">submit</button>
+ <table class=" table table-striped" appCustomhighliter >
+    <thead>
+        <tr>
+            <th >firstname</th>
+            <th>lastname</th>
+            <th>address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let arr of user" appCustomhighliter>
+            <td>{{arr.firstname}}</td>
+            <td>{{arr.lastname}}</td>
+            <td>{{arr.address}}</td>
+            <button (click)="for(arr)" class="btn btn-warning">edit</button>
+        </tr>
+    </tbody>
+ </table>
+ <button (click)="h2()">add</button>

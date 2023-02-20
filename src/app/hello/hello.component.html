@@ -1,0 +1,82 @@
+
+<h1>rushi raut </h1>
+{{place}}  {{location}}  {{pincode}}
+{{result}}
+<button (click)="tooglebutton()" [style.background-color]="buttoncolor">local</button>
+<button [disabled]="showbutton" [style]="primerybutton">local1</button>
+
+
+
+<button [disabled]="" (click)="msg()">submit</button>
+<button (click)="sum()">click</button> {{result}}<br>
+<!-- <img src="{{imageurl}}"> -->
+
+
+ <!-- <form account="" (ngsubmit)="user=(account)">
+<label>username</label>
+<input type="text" name="username" ngmodel id="username"placeholder="username">
+<label>password</label>
+<input type="text" name="password" ngmodel id="password" placeholder="password">
+<button type="submit">submit</button>
+</form>
+{{account.value}}  -->
+<div *ngIf="a<y then thenblock else elseblock">
+    today is sunday
+<span>hello</span>
+
+</div>
+<ng-template #thenblock>
+    todya is holiday
+
+ </ng-template>
+<ng-template #elseblock>
+ <div>
+        today id funday
+    </div>
+   </ng-template>
+
+  
+
+<div *ngFor="let student of  studentdetqails; index as i"> 
+    <li> {{i+1}} - {{student.name}}</li>
+    <p>hello from the user </p>
+</div><br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">name</th>
+            <th scope="col">lastname</th>
+            <th scope="col">address</th>
+            <th scope="col">#</th>
+            <th scope="col">action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of studentdetqails; index as r; first as isfirst;even as rec "  appCustomhighliter>
+            
+            <td>{{r+1}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.lastname}}</td>
+            <td>{{student.address}}</td>
+            <td><span *ngIf="rec">first record </span></td>
+<button (click)="removerecord(r)">delete</button>
+<td> </td>
+        
+        </tr>
+        
+    </tbody>
+
+</table>
+<button (click)="addrecord()">add</button>
+ <!-- <button (click)="removerecord()">delete</button> --> -->
+
+ <div appCustomhighliter> hello all
+
+</div>
+<router-outlet></router-outlet>
+
+
+ 
+   

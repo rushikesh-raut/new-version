@@ -1,0 +1,15 @@
+<p>parent1 works!</p>
+<app-child1 (local)="hello($event)"></app-child1>
+<!-- {{arr.id}} {{arr.name }} -->
+<div style="background-color:yellow" *ngFor="let student of arr; index as i"> 
+    <div *ngIf="i== 1">{{student.id}} {{student.name}}
+    </div>
+    <!-- {{student.id}}
+    {{student.name}}  -->
+</div>
+{{student}} 
+<button  [disabled]="isUnchanged">Disabled Button</button>
+<button (click)="zero()">click</button> {{a}}
+
+
+
